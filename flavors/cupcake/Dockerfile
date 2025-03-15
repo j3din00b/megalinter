@@ -129,7 +129,7 @@ ARG NPM_STYLELINT_CONFIG_SASS_GUIDELINES_VERSION=12.1.0
 # renovate: datasource=npm depName=stylelint-scss
 ARG NPM_STYLELINT_SCSS_VERSION=6.11.1
 # renovate: datasource=github-tags depName=golangci/golangci-lint
-ARG GO_GOLANGCI_LINT_VERSION=1.64.6
+ARG GO_GOLANGCI_LINT_VERSION=1.64.7
 # renovate: datasource=npm depName=graphql
 ARG NPM_GRAPHQL_VERSION=16.10.0
 # renovate: datasource=npm depName=graphql-schema-linter
@@ -192,7 +192,7 @@ ARG KTLINT_VERSION=1.5.0
 ARG DETEKT_VERSION=1.23.8
 
 # renovate: datasource=github-tags depName=kubescape/kubescape
-ARG KUBERNETES_KUBESCAPE_VERSION=3.0.30
+ARG KUBERNETES_KUBESCAPE_VERSION=3.0.31
 # renovate: datasource=npm depName=markdownlint-cli
 ARG NPM_MARKDOWNLINT_CLI_VERSION=0.44.0
 # renovate: datasource=npm depName=markdown-link-check
@@ -208,13 +208,13 @@ ARG PHP_PHPSTAN_PHPSTAN_VERSION=2.1.8
 # renovate: datasource=packagist depName=phpstan/extension-installer
 ARG PHP_PHPSTAN_EXTENSION_INSTALLER_VERSION=1.4.3
 # renovate: datasource=packagist depName=vimeo/psalm
-ARG PHP_VIMEO_PSALM_VERSION=6.5.0
+ARG PHP_VIMEO_PSALM_VERSION=6.8.9
 # renovate: datasource=packagist depName=overtrue/phplint
 ARG PHP_OVERTRUE_PHPLINT_VERSION=9.5.6
 # renovate: datasource=packagist depName=friendsofphp/php-cs-fixer
 ARG PHP_FRIENDSOFPHP_PHP_CS_FIXER_VERSION=v3.71.0
 # renovate: datasource=pypi depName=pylint
-ARG PIP_PYLINT_VERSION=3.3.4
+ARG PIP_PYLINT_VERSION=3.3.5
 # renovate: datasource=pypi depName=typing-extensions
 ARG PIP_TYPING_EXTENSIONS_VERSION=4.12.2
 # renovate: datasource=pypi depName=black
@@ -230,7 +230,7 @@ ARG NPM_PYRIGHT_VERSION=1.1.396
 # renovate: datasource=pypi depName=ruff
 ARG PIP_RUFF_VERSION=0.9.9
 # renovate: datasource=pypi depName=checkov
-ARG PIP_CHECKOV_VERSION=3.2.381
+ARG PIP_CHECKOV_VERSION=3.2.386
 # renovate: datasource=github-tags depName=anchore/grype
 ARG REPOSITORY_GRYPE_VERSION=0.87.0
 # renovate: datasource=npm depName=@ls-lint/ls-lint
@@ -262,7 +262,7 @@ ARG GEM_RUBOCOP_GITHUB_VERSION=0.23.0
 # renovate: datasource=rubygems depName=rubocop-performance
 ARG GEM_RUBOCOP_PERFORMANCE_VERSION=1.24.0
 # renovate: datasource=rubygems depName=rubocop-rails
-ARG GEM_RUBOCOP_RAILS_VERSION=2.30.2
+ARG GEM_RUBOCOP_RAILS_VERSION=2.30.3
 # renovate: datasource=rubygems depName=rubocop-rake
 ARG GEM_RUBOCOP_RAKE_VERSION=0.7.1
 # renovate: datasource=rubygems depName=rubocop-rspec
