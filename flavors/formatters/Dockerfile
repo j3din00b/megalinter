@@ -15,7 +15,7 @@
 # renovate: datasource=docker depName=rhysd/actionlint
 ARG BASH_SHFMT_VERSION=v3.10.0-alpine
 # renovate: datasource=docker depName=alpine/terragrunt
-ARG TERRAFORM_TERRAGRUNT_VERSION=1.10.3
+ARG TERRAFORM_TERRAGRUNT_VERSION=1.11.2
 #ARGTOP__END
 
 #############################################################################################
@@ -71,24 +71,24 @@ ARG NPM_MARKDOWNLINT_CLI_VERSION=0.44.0
 # renovate: datasource=npm depName=markdown-table-formatter
 ARG NPM_MARKDOWN_TABLE_FORMATTER_VERSION=1.6.1
 # renovate: datasource=nuget depName=PSScriptAnalyzer registryUrl=https://www.powershellgallery.com/api/v2/
-ARG PSSA_VERSION='1.23.0'
+ARG PSSA_VERSION='1.24.0'
 
 # renovate: datasource=pypi depName=black
 ARG PIP_BLACK_VERSION=25.1.0
 # renovate: datasource=pypi depName=isort
 ARG PIP_ISORT_VERSION=6.0.1
 # renovate: datasource=pypi depName=ruff
-ARG PIP_RUFF_VERSION=0.9.9
+ARG PIP_RUFF_VERSION=0.11.2
 # renovate: datasource=pypi depName=rstfmt
 ARG PIP_RSTFMT_VERSION=0.0.14
 # renovate: datasource=pypi depName=snakefmt
-ARG PIP_SNAKEFMT_VERSION=0.10.2
+ARG PIP_SNAKEFMT_VERSION=0.11.0
 # renovate: datasource=pypi depName=pip
 ARG PIP_PIP_VERSION=25.0.1
 # renovate: datasource=pypi depName=virtualenv
-ARG PIP_VIRTUALENV_VERSION=20.29.2
+ARG PIP_VIRTUALENV_VERSION=20.29.3
 # renovate: datasource=github-tags depName=rust-lang/rust
-ARG RUST_RUST_VERSION=1.85.0
+ARG RUST_RUST_VERSION=1.85.1
 
 ARG BASH_SHFMT_VERSION
 ARG TERRAFORM_TERRAGRUNT_VERSION

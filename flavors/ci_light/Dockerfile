@@ -19,9 +19,9 @@ ARG BASH_SHFMT_VERSION=v3.10.0-alpine
 # renovate: datasource=docker depName=hadolint/hadolint
 ARG DOCKERFILE_HADOLINT_VERSION=v2.12.0-alpine
 # renovate: datasource=docker depName=zricethezav/gitleaks
-ARG REPOSITORY_GITLEAKS_VERSION=v8.24.0
+ARG REPOSITORY_GITLEAKS_VERSION=v8.24.2
 # renovate: datasource=docker depName=trufflesecurity/trufflehog 
-ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.14
+ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.18
 #ARGTOP__END
 
 #############################################################################################
@@ -77,7 +77,7 @@ ARG NPM_V8R_VERSION=4.2.1
 # renovate: datasource=npm depName=prettier
 ARG NPM_PRETTIER_VERSION=3.5.3
 # renovate: datasource=github-tags depName=anchore/grype
-ARG REPOSITORY_GRYPE_VERSION=0.87.0
+ARG REPOSITORY_GRYPE_VERSION=0.90.0
 # renovate: datasource=npm depName=@ls-lint/ls-lint
 ARG NPM_LS_LINT_LS_LINT_VERSION=2.2.3
 # renovate: datasource=npm depName=secretlint
@@ -86,18 +86,20 @@ ARG NPM_SECRETLINT_VERSION=9.2.0
 ARG NPM_SECRETLINT_SECRETLINT_RULE_PRESET_RECOMMEND_VERSION=9.2.0
 # renovate: datasource=npm depName=@secretlint/secretlint-formatter-sarif
 ARG NPM_SECRETLINT_SECRETLINT_FORMATTER_SARIF_VERSION=9.2.0
+# renovate: datasource=github-tags depName=anchore/syft
+ARG REPOSITORY_SYFT_VERSION=1.21.0
 # renovate: datasource=github-tags depName=aquasecurity/trivy
-ARG REPOSITORY_TRIVY_VERSION=0.59.1
+ARG REPOSITORY_TRIVY_VERSION=0.60.0
 # renovate: datasource=github-tags depName=aquasecurity/trivy
-ARG REPOSITORY_TRIVY_SBOM_VERSION=0.59.1
+ARG REPOSITORY_TRIVY_SBOM_VERSION=0.60.0
 # renovate: datasource=pypi depName=yamllint
-ARG PIP_YAMLLINT_VERSION=1.36.0
+ARG PIP_YAMLLINT_VERSION=1.36.2
 # renovate: datasource=pypi depName=pip
 ARG PIP_PIP_VERSION=25.0.1
 # renovate: datasource=pypi depName=virtualenv
-ARG PIP_VIRTUALENV_VERSION=20.29.2
+ARG PIP_VIRTUALENV_VERSION=20.29.3
 # renovate: datasource=github-tags depName=rust-lang/rust
-ARG RUST_RUST_VERSION=1.85.0
+ARG RUST_RUST_VERSION=1.85.1
 
 ARG BASH_SHELLCHECK_VERSION
 ARG BASH_SHFMT_VERSION
@@ -269,6 +271,9 @@ RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/refs/tags/v${REPO
 # ls-lint installation
 #
 # secretlint installation
+#
+# syft installation
+    && curl -sSfL https://raw.githubusercontent.com/anchore/syft/refs/tags/v${REPOSITORY_SYFT_VERSION}/install.sh | sh -s -- -b /usr/local/bin \
 #
 # trivy installation
     && wget --tries=5 -q -O - https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin "v${REPOSITORY_TRIVY_VERSION}" \

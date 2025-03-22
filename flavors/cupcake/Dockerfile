@@ -21,17 +21,17 @@ ARG BASH_SHFMT_VERSION=v3.10.0-alpine
 # renovate: datasource=docker depName=hadolint/hadolint
 ARG DOCKERFILE_HADOLINT_VERSION=v2.12.0-alpine
 # renovate: datasource=docker depName=mstruebing/editorconfig-checker
-ARG EDITORCONFIG_EDITORCONFIG_CHECKER_VERSION=v3.2.0
+ARG EDITORCONFIG_EDITORCONFIG_CHECKER_VERSION=v3.2.1
 # renovate: datasource=github-tags depName=mgechev/revive
 ARG GO_REVIVE_VERSION=v1.7.0
 # renovate: datasource=docker depName=ghcr.io/yannh/kubeconform
 ARG KUBERNETES_KUBECONFORM_VERSION=v0.6.7-alpine
 # renovate: datasource=docker depName=zricethezav/gitleaks
-ARG REPOSITORY_GITLEAKS_VERSION=v8.24.0
+ARG REPOSITORY_GITLEAKS_VERSION=v8.24.2
 # renovate: datasource=docker depName=checkmarx/kics
-ARG REPOSITORY_KICS_VERSION=v2.1.3-alpine
+ARG REPOSITORY_KICS_VERSION=v2.1.6-alpine
 # renovate: datasource=docker depName=trufflesecurity/trufflehog 
-ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.14
+ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.18
 # renovate: datasource=docker depName=lycheeverse/lychee
 ARG SPELL_LYCHEE_VERSION=sha-7c4b132-alpine
 # renovate: datasource=docker depName=ghcr.io/terraform-linters/tflint
@@ -39,7 +39,7 @@ ARG TERRAFORM_TFLINT_VERSION=0.55.1
 # renovate: datasource=docker depName=tenable/terrascan
 ARG TERRAFORM_TERRASCAN_VERSION=1.19.9
 # renovate: datasource=docker depName=alpine/terragrunt
-ARG TERRAFORM_TERRAGRUNT_VERSION=1.10.3
+ARG TERRAFORM_TERRAGRUNT_VERSION=1.11.2
 #ARGTOP__END
 
 #############################################################################################
@@ -117,7 +117,7 @@ ARG CLJ_KONDO_VERSION=2025.01.16
 # renovate: datasource=github-tags depName=greglook/cljstyle
 ARG CLJ_STYLE_VERSION=0.17.642
 # renovate: datasource=pypi depName=cfn-lint
-ARG PIP_CFN_LINT_VERSION=1.27.0
+ARG PIP_CFN_LINT_VERSION=1.32.0
 # renovate: datasource=npm depName=jscpd
 ARG NPM_JSCPD_VERSION=4.0.5
 # renovate: datasource=npm depName=stylelint
@@ -129,7 +129,7 @@ ARG NPM_STYLELINT_CONFIG_SASS_GUIDELINES_VERSION=12.1.0
 # renovate: datasource=npm depName=stylelint-scss
 ARG NPM_STYLELINT_SCSS_VERSION=6.11.1
 # renovate: datasource=github-tags depName=golangci/golangci-lint
-ARG GO_GOLANGCI_LINT_VERSION=1.64.6
+ARG GO_GOLANGCI_LINT_VERSION=1.64.8
 # renovate: datasource=npm depName=graphql
 ARG NPM_GRAPHQL_VERSION=16.10.0
 # renovate: datasource=npm depName=graphql-schema-linter
@@ -148,7 +148,7 @@ ARG NPM_ESLINT_VERSION=8.57.1
 # renovate: datasource=npm depName=eslint-config-airbnb
 ARG NPM_ESLINT_CONFIG_AIRBNB_VERSION=19.0.4
 # renovate: datasource=npm depName=eslint-config-prettier
-ARG NPM_ESLINT_CONFIG_PRETTIER_VERSION=10.0.2
+ARG NPM_ESLINT_CONFIG_PRETTIER_VERSION=10.1.1
 # renovate: datasource=npm depName=eslint-config-standard
 ARG NPM_ESLINT_CONFIG_STANDARD_VERSION=17.1.0
 # renovate: datasource=npm depName=eslint-plugin-import
@@ -162,7 +162,7 @@ ARG NPM_ESLINT_PLUGIN_PRETTIER_VERSION=5.2.3
 # renovate: datasource=npm depName=eslint-plugin-promise
 ARG NPM_ESLINT_PLUGIN_PROMISE_VERSION=6.6.0
 # renovate: datasource=npm depName=eslint-plugin-vue
-ARG NPM_ESLINT_PLUGIN_VUE_VERSION=9.32.0
+ARG NPM_ESLINT_PLUGIN_VUE_VERSION=9.33.0
 # renovate: datasource=npm depName=@babel/core
 ARG NPM_BABEL_CORE_VERSION=7.26.10
 # renovate: datasource=npm depName=@babel/eslint-parser
@@ -192,7 +192,7 @@ ARG KTLINT_VERSION=1.5.0
 ARG DETEKT_VERSION=1.23.8
 
 # renovate: datasource=github-tags depName=kubescape/kubescape
-ARG KUBERNETES_KUBESCAPE_VERSION=3.0.30
+ARG KUBERNETES_KUBESCAPE_VERSION=3.0.32
 # renovate: datasource=npm depName=markdownlint-cli
 ARG NPM_MARKDOWNLINT_CLI_VERSION=0.44.0
 # renovate: datasource=npm depName=markdown-link-check
@@ -200,7 +200,7 @@ ARG NPM_MARKDOWN_LINK_CHECK_VERSION=3.12.2
 # renovate: datasource=npm depName=markdown-table-formatter
 ARG NPM_MARKDOWN_TABLE_FORMATTER_VERSION=1.6.1
 # renovate: datasource=packagist depName=squizlabs/php_codesniffer
-ARG PHP_SQUIZLABS_PHP_CODESNIFFER_VERSION=3.11.3
+ARG PHP_SQUIZLABS_PHP_CODESNIFFER_VERSION=3.12.0
 # renovate: datasource=packagist depName=bartlett/sarif-php-converters
 ARG PHP_BARTLETT_SARIF_PHP_CONVERTERS_VERSION=1.1.0
 # renovate: datasource=packagist depName=phpstan/phpstan
@@ -208,13 +208,13 @@ ARG PHP_PHPSTAN_PHPSTAN_VERSION=2.1.8
 # renovate: datasource=packagist depName=phpstan/extension-installer
 ARG PHP_PHPSTAN_EXTENSION_INSTALLER_VERSION=1.4.3
 # renovate: datasource=packagist depName=vimeo/psalm
-ARG PHP_VIMEO_PSALM_VERSION=6.5.0
+ARG PHP_VIMEO_PSALM_VERSION=6.8.9
 # renovate: datasource=packagist depName=overtrue/phplint
 ARG PHP_OVERTRUE_PHPLINT_VERSION=9.5.6
 # renovate: datasource=packagist depName=friendsofphp/php-cs-fixer
-ARG PHP_FRIENDSOFPHP_PHP_CS_FIXER_VERSION=v3.71.0
+ARG PHP_FRIENDSOFPHP_PHP_CS_FIXER_VERSION=v3.73.1
 # renovate: datasource=pypi depName=pylint
-ARG PIP_PYLINT_VERSION=3.3.4
+ARG PIP_PYLINT_VERSION=3.3.6
 # renovate: datasource=pypi depName=typing-extensions
 ARG PIP_TYPING_EXTENSIONS_VERSION=4.12.2
 # renovate: datasource=pypi depName=black
@@ -226,13 +226,13 @@ ARG PIP_ISORT_VERSION=6.0.1
 # renovate: datasource=pypi depName=mypy
 ARG PIP_MYPY_VERSION=1.15.0
 # renovate: datasource=npm depName=pyright
-ARG NPM_PYRIGHT_VERSION=1.1.396
+ARG NPM_PYRIGHT_VERSION=1.1.397
 # renovate: datasource=pypi depName=ruff
-ARG PIP_RUFF_VERSION=0.9.9
+ARG PIP_RUFF_VERSION=0.11.2
 # renovate: datasource=pypi depName=checkov
-ARG PIP_CHECKOV_VERSION=3.2.381
+ARG PIP_CHECKOV_VERSION=3.2.390
 # renovate: datasource=github-tags depName=anchore/grype
-ARG REPOSITORY_GRYPE_VERSION=0.87.0
+ARG REPOSITORY_GRYPE_VERSION=0.90.0
 # renovate: datasource=npm depName=@ls-lint/ls-lint
 ARG NPM_LS_LINT_LS_LINT_VERSION=2.2.3
 # renovate: datasource=npm depName=secretlint
@@ -242,11 +242,13 @@ ARG NPM_SECRETLINT_SECRETLINT_RULE_PRESET_RECOMMEND_VERSION=9.2.0
 # renovate: datasource=npm depName=@secretlint/secretlint-formatter-sarif
 ARG NPM_SECRETLINT_SECRETLINT_FORMATTER_SARIF_VERSION=9.2.0
 # renovate: datasource=pypi depName=semgrep
-ARG PIP_SEMGREP_VERSION=1.111.0
+ARG PIP_SEMGREP_VERSION=1.114.0
+# renovate: datasource=github-tags depName=anchore/syft
+ARG REPOSITORY_SYFT_VERSION=1.21.0
 # renovate: datasource=github-tags depName=aquasecurity/trivy
-ARG REPOSITORY_TRIVY_VERSION=0.59.1
+ARG REPOSITORY_TRIVY_VERSION=0.60.0
 # renovate: datasource=github-tags depName=aquasecurity/trivy
-ARG REPOSITORY_TRIVY_SBOM_VERSION=0.59.1
+ARG REPOSITORY_TRIVY_SBOM_VERSION=0.60.0
 # renovate: datasource=pypi depName=Pygments
 ARG PIP_PYGMENTS_VERSION=2.19.1
 # renovate: datasource=pypi depName=restructuredtext_lint
@@ -256,13 +258,13 @@ ARG PIP_RSTCHECK_VERSION=6.2.4
 # renovate: datasource=pypi depName=rstfmt
 ARG PIP_RSTFMT_VERSION=0.0.14
 # renovate: datasource=rubygems depName=rubocop
-ARG GEM_RUBOCOP_VERSION=1.73.2
+ARG GEM_RUBOCOP_VERSION=1.74.0
 # renovate: datasource=rubygems depName=rubocop-github
 ARG GEM_RUBOCOP_GITHUB_VERSION=0.23.0
 # renovate: datasource=rubygems depName=rubocop-performance
 ARG GEM_RUBOCOP_PERFORMANCE_VERSION=1.24.0
 # renovate: datasource=rubygems depName=rubocop-rails
-ARG GEM_RUBOCOP_RAILS_VERSION=2.30.2
+ARG GEM_RUBOCOP_RAILS_VERSION=2.30.3
 # renovate: datasource=rubygems depName=rubocop-rake
 ARG GEM_RUBOCOP_RAKE_VERSION=0.7.1
 # renovate: datasource=rubygems depName=rubocop-rspec
@@ -282,13 +284,13 @@ ARG NPM_TYPESCRIPT_ESLINT_PARSER_VERSION=8.25.0
 # renovate: datasource=npm depName=ts-standard
 ARG NPM_TS_STANDARD_VERSION=12.0.2
 # renovate: datasource=pypi depName=yamllint
-ARG PIP_YAMLLINT_VERSION=1.36.0
+ARG PIP_YAMLLINT_VERSION=1.36.2
 # renovate: datasource=pypi depName=pip
 ARG PIP_PIP_VERSION=25.0.1
 # renovate: datasource=pypi depName=virtualenv
-ARG PIP_VIRTUALENV_VERSION=20.29.2
+ARG PIP_VIRTUALENV_VERSION=20.29.3
 # renovate: datasource=github-tags depName=rust-lang/rust
-ARG RUST_RUST_VERSION=1.85.0
+ARG RUST_RUST_VERSION=1.85.1
 
 ARG ACTION_ACTIONLINT_VERSION
 ARG BASH_SHELLCHECK_VERSION
@@ -780,8 +782,11 @@ ENV KICS_QUERIES_PATH=/usr/bin/assets/queries KICS_LIBRARIES_PATH=/usr/bin/asset
 #
 # semgrep installation
 #
+# syft installation
+RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/refs/tags/v${REPOSITORY_SYFT_VERSION}/install.sh | sh -s -- -b /usr/local/bin \
+#
 # trivy installation
-RUN wget --tries=5 -q -O - https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin "v${REPOSITORY_TRIVY_VERSION}" \
+    && wget --tries=5 -q -O - https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin "v${REPOSITORY_TRIVY_VERSION}" \
     && (trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress || trivy image --download-db-only --no-progress) \
 #
 # trivy-sbom installation

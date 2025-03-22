@@ -49,11 +49,11 @@ FROM python:3.12.8-alpine3.21
 #############################################################################################
 #ARG__START
 # renovate: datasource=pypi depName=cfn-lint
-ARG PIP_CFN_LINT_VERSION=1.27.0
+ARG PIP_CFN_LINT_VERSION=1.32.0
 # renovate: datasource=pypi depName=pip
 ARG PIP_PIP_VERSION=25.0.1
 # renovate: datasource=pypi depName=virtualenv
-ARG PIP_VIRTUALENV_VERSION=20.29.2
+ARG PIP_VIRTUALENV_VERSION=20.29.3
 #ARG__END
 
 ####################

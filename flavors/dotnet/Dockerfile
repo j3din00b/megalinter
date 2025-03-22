@@ -21,15 +21,15 @@ ARG BASH_SHFMT_VERSION=v3.10.0-alpine
 # renovate: datasource=docker depName=hadolint/hadolint
 ARG DOCKERFILE_HADOLINT_VERSION=v2.12.0-alpine
 # renovate: datasource=docker depName=mstruebing/editorconfig-checker
-ARG EDITORCONFIG_EDITORCONFIG_CHECKER_VERSION=v3.2.0
+ARG EDITORCONFIG_EDITORCONFIG_CHECKER_VERSION=v3.2.1
 # renovate: datasource=docker depName=ghcr.io/yannh/kubeconform
 ARG KUBERNETES_KUBECONFORM_VERSION=v0.6.7-alpine
 # renovate: datasource=docker depName=yoheimuta/protolint
 ARG PROTOBUF_PROTOLINT_VERSION=0.53.0
 # renovate: datasource=docker depName=zricethezav/gitleaks
-ARG REPOSITORY_GITLEAKS_VERSION=v8.24.0
+ARG REPOSITORY_GITLEAKS_VERSION=v8.24.2
 # renovate: datasource=docker depName=trufflesecurity/trufflehog 
-ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.14
+ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.18
 # renovate: datasource=docker depName=jdkato/vale
 ARG SPELL_VALE_VERSION=v3.9.4
 # renovate: datasource=docker depName=lycheeverse/lychee
@@ -93,7 +93,7 @@ ARG POWERSHELL_VERSION=7.5.0
 # renovate: datasource=pypi depName=ansible-lint
 ARG PIP_ANSIBLE_LINT_VERSION=25.1.3
 # renovate: datasource=npm depName=@stoplight/spectral-cli
-ARG NPM_SPECTRAL_CLI_VERSION=6.14.2
+ARG NPM_SPECTRAL_CLI_VERSION=6.14.3
 # renovate: datasource=github-tags depName=Azure/arm-ttk
 ARG ARM_TTK_VERSION=20240328
 ARG ARM_TTK_NAME='arm-ttk.zip'
@@ -101,7 +101,7 @@ ARG ARM_TTK_DIRECTORY='/opt/microsoft'
 # renovate: datasource=crate depName=shellcheck-sarif
 ARG CARGO_SHELLCHECK_SARIF_VERSION=0.7.0
 # renovate: datasource=github-tags depName=Azure/bicep
-ARG BICEP_VERSION=0.33.93
+ARG BICEP_VERSION=0.34.1
 ARG BICEP_EXE='bicep'
 ARG BICEP_DIR='/usr/local/bin'
 # renovate: datasource=pypi depName=cpplint
@@ -149,7 +149,7 @@ ARG KTLINT_VERSION=1.5.0
 ARG DETEKT_VERSION=1.23.8
 
 # renovate: datasource=github-tags depName=kubescape/kubescape
-ARG KUBERNETES_KUBESCAPE_VERSION=3.0.30
+ARG KUBERNETES_KUBESCAPE_VERSION=3.0.32
 # renovate: datasource=npm depName=markdownlint-cli
 ARG NPM_MARKDOWNLINT_CLI_VERSION=0.44.0
 # renovate: datasource=npm depName=markdown-link-check
@@ -157,12 +157,12 @@ ARG NPM_MARKDOWN_LINK_CHECK_VERSION=3.12.2
 # renovate: datasource=npm depName=markdown-table-formatter
 ARG NPM_MARKDOWN_TABLE_FORMATTER_VERSION=1.6.1
 # renovate: datasource=nuget depName=PSScriptAnalyzer registryUrl=https://www.powershellgallery.com/api/v2/
-ARG PSSA_VERSION='1.23.0'
+ARG PSSA_VERSION='1.24.0'
 
 # renovate: datasource=pypi depName=checkov
-ARG PIP_CHECKOV_VERSION=3.2.381
+ARG PIP_CHECKOV_VERSION=3.2.390
 # renovate: datasource=github-tags depName=anchore/grype
-ARG REPOSITORY_GRYPE_VERSION=0.87.0
+ARG REPOSITORY_GRYPE_VERSION=0.90.0
 # renovate: datasource=npm depName=@ls-lint/ls-lint
 ARG NPM_LS_LINT_LS_LINT_VERSION=2.2.3
 # renovate: datasource=npm depName=secretlint
@@ -172,13 +172,15 @@ ARG NPM_SECRETLINT_SECRETLINT_RULE_PRESET_RECOMMEND_VERSION=9.2.0
 # renovate: datasource=npm depName=@secretlint/secretlint-formatter-sarif
 ARG NPM_SECRETLINT_SECRETLINT_FORMATTER_SARIF_VERSION=9.2.0
 # renovate: datasource=pypi depName=semgrep
-ARG PIP_SEMGREP_VERSION=1.111.0
+ARG PIP_SEMGREP_VERSION=1.114.0
+# renovate: datasource=github-tags depName=anchore/syft
+ARG REPOSITORY_SYFT_VERSION=1.21.0
 # renovate: datasource=github-tags depName=aquasecurity/trivy
-ARG REPOSITORY_TRIVY_VERSION=0.59.1
+ARG REPOSITORY_TRIVY_VERSION=0.60.0
 # renovate: datasource=github-tags depName=aquasecurity/trivy
-ARG REPOSITORY_TRIVY_SBOM_VERSION=0.59.1
+ARG REPOSITORY_TRIVY_SBOM_VERSION=0.60.0
 # renovate: datasource=pypi depName=snakefmt
-ARG PIP_SNAKEFMT_VERSION=0.10.2
+ARG PIP_SNAKEFMT_VERSION=0.11.0
 # renovate: datasource=npm depName=cspell
 ARG NPM_CSPELL_VERSION=8.17.5
 # renovate: datasource=pypi depName=proselint
@@ -190,13 +192,13 @@ ARG SQL_TSQLLINT_VERSION=1.16.0
 # renovate: datasource=npm depName=@ibm/tekton-lint
 ARG NPM_IBM_TEKTON_LINT_VERSION=1.1.0
 # renovate: datasource=pypi depName=yamllint
-ARG PIP_YAMLLINT_VERSION=1.36.0
+ARG PIP_YAMLLINT_VERSION=1.36.2
 # renovate: datasource=pypi depName=pip
 ARG PIP_PIP_VERSION=25.0.1
 # renovate: datasource=pypi depName=virtualenv
-ARG PIP_VIRTUALENV_VERSION=20.29.2
+ARG PIP_VIRTUALENV_VERSION=20.29.3
 # renovate: datasource=github-tags depName=rust-lang/rust
-ARG RUST_RUST_VERSION=1.85.0
+ARG RUST_RUST_VERSION=1.85.1
 
 ARG ACTION_ACTIONLINT_VERSION
 ARG BASH_SHELLCHECK_VERSION
@@ -535,6 +537,9 @@ RUN curl --retry 5 --retry-delay 5 -sSLO https://github.com/pinterest/ktlint/rel
 # secretlint installation
 #
 # semgrep installation
+#
+# syft installation
+    && curl -sSfL https://raw.githubusercontent.com/anchore/syft/refs/tags/v${REPOSITORY_SYFT_VERSION}/install.sh | sh -s -- -b /usr/local/bin \
 #
 # trivy installation
     && wget --tries=5 -q -O - https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin "v${REPOSITORY_TRIVY_VERSION}" \
