@@ -23,7 +23,7 @@ ARG REPOSITORY_DUSTILOCK_VERSION=1.2.0
 # renovate: datasource=docker depName=zricethezav/gitleaks
 ARG REPOSITORY_GITLEAKS_VERSION=v8.26.0
 # renovate: datasource=docker depName=checkmarx/kics
-ARG REPOSITORY_KICS_VERSION=v2.1.7-alpine
+ARG REPOSITORY_KICS_VERSION=v2.1.8-alpine
 # renovate: datasource=docker depName=trufflesecurity/trufflehog
 ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.30
 # renovate: datasource=docker depName=ghcr.io/terraform-linters/tflint
@@ -98,7 +98,7 @@ ARG PIP_CHECKOV_VERSION=3.2.413
 # renovate: datasource=nuget depName=Microsoft.CST.DevSkim.CLI
 ARG REPOSITORY_DEVSKIM_VERSION=1.0.56
 # renovate: datasource=github-tags depName=anchore/grype
-ARG REPOSITORY_GRYPE_VERSION=0.92.1
+ARG REPOSITORY_GRYPE_VERSION=0.92.2
 # renovate: datasource=npm depName=secretlint
 ARG NPM_SECRETLINT_VERSION=9.3.2
 # renovate: datasource=npm depName=@secretlint/secretlint-rule-preset-recommend
