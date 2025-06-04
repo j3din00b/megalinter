@@ -25,11 +25,11 @@ ARG EDITORCONFIG_EDITORCONFIG_CHECKER_VERSION=v3.3.0
 # renovate: datasource=docker depName=ghcr.io/yannh/kubeconform
 ARG KUBERNETES_KUBECONFORM_VERSION=v0.7.0-alpine
 # renovate: datasource=docker depName=yoheimuta/protolint
-ARG PROTOBUF_PROTOLINT_VERSION=0.55.5
+ARG PROTOBUF_PROTOLINT_VERSION=0.55.6
 # renovate: datasource=docker depName=zricethezav/gitleaks
 ARG REPOSITORY_GITLEAKS_VERSION=v8.26.0
 # renovate: datasource=docker depName=trufflesecurity/trufflehog
-ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.30
+ARG REPOSITORY_TRUFFLEHOG_VERSION=3.88.34
 # renovate: datasource=docker depName=jdkato/vale
 ARG SPELL_VALE_VERSION=v3.11.2
 # renovate: datasource=docker depName=lycheeverse/lychee
@@ -59,7 +59,7 @@ FROM lycheeverse/lychee:${SPELL_LYCHEE_VERSION} AS lychee
 ##################
 # Build wheel for megalinter python package
 ##################
-FROM ghcr.io/astral-sh/uv:0.7.2 AS uv
+FROM ghcr.io/astral-sh/uv:0.7.9 AS uv
 FROM python:3.12.10-alpine3.21 AS build-ml-core
 WORKDIR /
 COPY --from=uv /uv /uvx /bin/
@@ -93,7 +93,7 @@ ARG POWERSHELL_VERSION=7.5.1
 # renovate: datasource=npm depName=typescript
 ARG NPM_TYPESCRIPT_VERSION=5.8.3
 # renovate: datasource=pypi depName=ansible-lint
-ARG PIP_ANSIBLE_LINT_VERSION=25.4.0
+ARG PIP_ANSIBLE_LINT_VERSION=25.5.0
 # renovate: datasource=npm depName=@stoplight/spectral-cli
 ARG NPM_SPECTRAL_CLI_VERSION=6.15.0
 # renovate: datasource=github-tags depName=Azure/arm-ttk
@@ -113,7 +113,7 @@ ARG NPM_COFFEELINT_CLI_VERSION=5.2.11
 # renovate: datasource=npm depName=jscpd
 ARG NPM_JSCPD_VERSION=4.0.5
 # renovate: datasource=nuget depName=csharpier
-ARG CSHARP_CSHARPIER_VERSION=1.0.1
+ARG CSHARP_CSHARPIER_VERSION=1.0.2
 # renovate: datasource=nuget depName=roslynator.dotnet.cli
 ARG CSHARP_ROSLYNATOR_VERSION=0.10.1
 # renovate: datasource=npm depName=stylelint
@@ -135,7 +135,7 @@ ARG NPM_GROOVY_LINT_VERSION=15.2.0
 # renovate: datasource=pypi depName=djlint
 ARG PIP_DJLINT_VERSION=1.36.4
 # renovate: datasource=npm depName=htmlhint
-ARG NPM_HTMLHINT_VERSION=1.1.4
+ARG NPM_HTMLHINT_VERSION=1.2.0
 # renovate: datasource=npm depName=eslint
 ARG NPM_ESLINT_VERSION=8.57.1
 # renovate: datasource=npm depName=eslint-config-airbnb
@@ -147,17 +147,17 @@ ARG NPM_ESLINT_CONFIG_STANDARD_VERSION=17.1.0
 # renovate: datasource=npm depName=eslint-plugin-import
 ARG NPM_ESLINT_PLUGIN_IMPORT_VERSION=2.31.0
 # renovate: datasource=npm depName=eslint-plugin-jest
-ARG NPM_ESLINT_PLUGIN_JEST_VERSION=28.11.0
+ARG NPM_ESLINT_PLUGIN_JEST_VERSION=28.11.2
 # renovate: datasource=npm depName=eslint-plugin-n
 ARG NPM_ESLINT_PLUGIN_N_VERSION=16.6.2
 # renovate: datasource=npm depName=eslint-plugin-prettier
-ARG NPM_ESLINT_PLUGIN_PRETTIER_VERSION=5.4.0
+ARG NPM_ESLINT_PLUGIN_PRETTIER_VERSION=5.4.1
 # renovate: datasource=npm depName=eslint-plugin-promise
 ARG NPM_ESLINT_PLUGIN_PROMISE_VERSION=6.6.0
 # renovate: datasource=npm depName=eslint-plugin-vue
 ARG NPM_ESLINT_PLUGIN_VUE_VERSION=10.1.0
 # renovate: datasource=npm depName=@babel/core
-ARG NPM_BABEL_CORE_VERSION=7.27.1
+ARG NPM_BABEL_CORE_VERSION=7.27.4
 # renovate: datasource=npm depName=@babel/eslint-parser
 ARG NPM_BABEL_ESLINT_PARSER_VERSION=7.27.1
 # renovate: datasource=npm depName=@microsoft/eslint-formatter-sarif
@@ -198,29 +198,29 @@ ARG PSSA_VERSION='1.24.0'
 # renovate: datasource=pypi depName=checkov
 ARG PIP_CHECKOV_VERSION=3.2.413
 # renovate: datasource=github-tags depName=anchore/grype
-ARG REPOSITORY_GRYPE_VERSION=0.92.1
+ARG REPOSITORY_GRYPE_VERSION=0.92.2
 # renovate: datasource=npm depName=@ls-lint/ls-lint
 ARG NPM_LS_LINT_LS_LINT_VERSION=2.3.0
 # renovate: datasource=npm depName=secretlint
-ARG NPM_SECRETLINT_VERSION=9.3.2
+ARG NPM_SECRETLINT_VERSION=9.3.3
 # renovate: datasource=npm depName=@secretlint/secretlint-rule-preset-recommend
-ARG NPM_SECRETLINT_SECRETLINT_RULE_PRESET_RECOMMEND_VERSION=9.3.2
+ARG NPM_SECRETLINT_SECRETLINT_RULE_PRESET_RECOMMEND_VERSION=9.3.3
 # renovate: datasource=npm depName=@secretlint/secretlint-formatter-sarif
-ARG NPM_SECRETLINT_SECRETLINT_FORMATTER_SARIF_VERSION=9.3.2
+ARG NPM_SECRETLINT_SECRETLINT_FORMATTER_SARIF_VERSION=9.3.3
 # renovate: datasource=pypi depName=semgrep
 ARG PIP_SEMGREP_VERSION=1.116.0
 # renovate: datasource=github-tags depName=anchore/syft
-ARG REPOSITORY_SYFT_VERSION=1.25.1
+ARG REPOSITORY_SYFT_VERSION=1.26.1
 # renovate: datasource=github-tags depName=aquasecurity/trivy
 ARG REPOSITORY_TRIVY_VERSION=0.62.1
 # renovate: datasource=github-tags depName=aquasecurity/trivy
 ARG REPOSITORY_TRIVY_SBOM_VERSION=0.62.1
 # renovate: datasource=pypi depName=snakemake
-ARG PIP_SNAKEMAKE_VERSION=9.4.0
+ARG PIP_SNAKEMAKE_VERSION=9.5.1
 # renovate: datasource=pypi depName=snakefmt
 ARG PIP_SNAKEFMT_VERSION=0.11.0
 # renovate: datasource=npm depName=cspell
-ARG NPM_CSPELL_VERSION=9.0.1
+ARG NPM_CSPELL_VERSION=9.0.2
 # renovate: datasource=pypi depName=proselint
 ARG PIP_PROSELINT_VERSION=0.14.0
 # renovate: datasource=pypi depName=sqlfluff
