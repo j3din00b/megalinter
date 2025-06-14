@@ -82,6 +82,74 @@ Note: Can be used with `oxsecurity/megalinter@beta` in your GitHub Action mega-l
   - [terragrunt](https://terragrunt.gruntwork.io) from 0.78.2 to **0.78.4** on 2025-05-18
   - [clippy](https://github.com/rust-lang/rust-clippy) from 0.1.86 to **0.1.87** on 2025-05-18
   - [markdownlint](https://github.com/DavidAnson/markdownlint) from 0.44.0 to **0.45.0** on 2025-05-19
+  - [ktlint](https://ktlint.github.io) from 1.5.0 to **1.6.0** on 2025-05-20
+  - [syft](https://github.com/anchore/syft) from 1.25.1 to **1.26.0** on 2025-05-20
+  - [grype](https://github.com/anchore/grype) from 0.92.1 to **0.92.2** on 2025-05-21
+  - [kics](https://www.kics.io) from 2.1.7 to **2.1.8** on 2025-05-21
+  - [lightning-flow-scanner](https://github.com/Lightning-Flow-Scanner) from 3.15.0 to **3.15.1** on 2025-05-21
+  - [cspell](https://github.com/streetsidesoftware/cspell/tree/master/packages/cspell) from 9.0.1 to **9.0.2** on 2025-05-21
+  - [checkstyle](https://checkstyle.org/) from 10.23.1 to **10.24.0** on 2025-05-24
+  - [pyright](https://github.com/Microsoft/pyright) from 1.1.400 to **1.1.401** on 2025-05-24
+  - [syft](https://github.com/anchore/syft) from 1.26.0 to **1.26.1** on 2025-05-24
+  - [cfn-lint](https://github.com/aws-cloudformation/cfn-lint) from 1.35.1 to **1.35.3** on 2025-05-25
+  - [csharpier](https://csharpier.com/) from 1.0.1 to **1.0.2** on 2025-05-25
+  - [terraform-fmt](https://developer.hashicorp.com/terraform/cli/commands/fmt) from 1.12.0 to **1.12.1** on 2025-05-25
+  - [terragrunt](https://terragrunt.gruntwork.io) from 0.78.4 to **0.80.2** on 2025-05-25
+  - [phpstan](https://phpstan.org/) from 2.1.16 to **2.1.17** on 2025-05-25
+  - [ruff-format](https://github.com/astral-sh/ruff) from 0.11.10 to **0.11.11** on 2025-05-25
+  - [ruff](https://github.com/astral-sh/ruff) from 0.11.10 to **0.11.11** on 2025-05-25
+  - [rubocop](https://rubocop.org/) from 1.75.6 to **1.75.7** on 2025-05-25
+  - [snakemake](https://snakemake.readthedocs.io/en/stable/) from 9.4.0 to **9.4.1** on 2025-05-25
+  - [ansible-lint](https://ansible-lint.readthedocs.io/) from 25.4.0 to **25.5.0** on 2025-05-27
+  - [dartanalyzer](https://dart.dev/tools/dart-analyze) from 3.7.3 to **3.8.0** on 2025-05-27
+  - [htmlhint](https://htmlhint.com/) from 1.1.4 to **1.2.0** on 2025-05-27
+  - [secretlint](https://github.com/secretlint/secretlint) from 9.3.2 to **9.3.3** on 2025-05-27
+  - [trufflehog](https://github.com/trufflesecurity/trufflehog) from 3.88.30 to **3.88.34** on 2025-05-27
+  - [lightning-flow-scanner](https://github.com/Lightning-Flow-Scanner) from 3.15.1 to **3.16.0** on 2025-05-27
+  - [psalm](https://psalm.dev) from Psalm.6.10.3@ to **Psalm.6.11.0@** on 2025-05-28
+  - [protolint](https://github.com/yoheimuta/protolint) from 0.55.5 to **0.55.6** on 2025-05-28
+  - [kics](https://www.kics.io) from 2.1.8 to **2.1.9** on 2025-05-28
+  - [snakemake](https://snakemake.readthedocs.io/en/stable/) from 9.4.1 to **9.5.1** on 2025-05-28
+  - [tflint](https://github.com/terraform-linters/tflint) from 0.57.0 to **0.58.0** on 2025-05-29
+  - [dartanalyzer](https://dart.dev/tools/dart-analyze) from 3.8.0 to **3.8.1** on 2025-05-30
+  - [checkstyle](https://checkstyle.org/) from 10.24.0 to **10.25.0** on 2025-05-31
+  - [terragrunt](https://terragrunt.gruntwork.io) from 0.80.2 to **0.80.4** on 2025-06-01
+  - [ruff-format](https://github.com/astral-sh/ruff) from 0.11.11 to **0.11.12** on 2025-06-02
+  - [ruff](https://github.com/astral-sh/ruff) from 0.11.11 to **0.11.12** on 2025-06-02
+  - [rstcheck](https://github.com/myint/rstcheck) from 6.2.4 to **6.2.5** on 2025-06-02
+  - [rubocop](https://rubocop.org/) from 1.75.7 to **1.75.8** on 2025-06-02
+  - [lightning-flow-scanner](https://github.com/Lightning-Flow-Scanner) from 3.16.0 to **3.16.1** on 2025-06-02
+  - [clj-kondo](https://github.com/borkdude/clj-kondo) from 2025.04.07 to **2025.06.05** on 2025-06-11
+  - [cfn-lint](https://github.com/aws-cloudformation/cfn-lint) from 1.35.3 to **1.35.4** on 2025-06-11
+  - [ruff-format](https://github.com/astral-sh/ruff) from 0.11.12 to **0.11.13** on 2025-06-11
+  - [ruff](https://github.com/astral-sh/ruff) from 0.11.12 to **0.11.13** on 2025-06-11
+  - [grype](https://github.com/anchore/grype) from 0.92.2 to **0.93.0** on 2025-06-11
+  - [syft](https://github.com/anchore/syft) from 1.26.1 to **1.27.0** on 2025-06-11
+  - [terragrunt](https://terragrunt.gruntwork.io) from 0.80.4 to **0.81.0** on 2025-06-11
+  - [pmd](https://pmd.github.io/) from 7.13.0 to **7.14.0** on 2025-06-13
+  - [mypy](https://mypy.readthedocs.io/en/stable/) from 1.15.0 to **1.16.0** on 2025-06-13
+  - [grype](https://github.com/anchore/grype) from 0.93.0 to **0.94.0** on 2025-06-13
+  - [ls-lint](https://ls-lint.org/) from 2.3.0 to **2.3.1** on 2025-06-13
+  - [secretlint](https://github.com/secretlint/secretlint) from 9.3.3 to **9.3.4** on 2025-06-13
+  - [syft](https://github.com/anchore/syft) from 1.27.0 to **1.27.1** on 2025-06-13
+  - [bicep_linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter) from 0.35.1 to **0.36.1** on 2025-06-13
+  - [stylelint](https://stylelint.io) from 16.19.1 to **16.20.0** on 2025-06-13
+  - [revive](https://revive.run/) from 1.9.0 to **1.10.0** on 2025-06-13
+  - [htmlhint](https://htmlhint.com/) from 1.2.0 to **1.5.1** on 2025-06-13
+  - [psalm](https://psalm.dev) from Psalm.6.11.0@ to **Psalm.6.12.0@** on 2025-06-13
+  - [pyright](https://github.com/Microsoft/pyright) from 1.1.401 to **1.1.402** on 2025-06-13
+  - [gitleaks](https://github.com/gitleaks/gitleaks) from 8.26.0 to **8.27.2** on 2025-06-13
+  - [kics](https://www.kics.io) from 2.1.9 to **2.1.10** on 2025-06-13
+  - [semgrep](https://semgrep.dev/) from 3.12 to **3.13** on 2025-06-13
+  - [trivy-sbom](https://aquasecurity.github.io/trivy/) from 0.62.1 to **0.63.0** on 2025-06-13
+  - [trivy](https://aquasecurity.github.io/trivy/) from 0.62.1 to **0.63.0** on 2025-06-13
+  - [trufflehog](https://github.com/trufflesecurity/trufflehog) from 3.88.34 to **3.89.1** on 2025-06-13
+  - [rubocop](https://rubocop.org/) from 1.75.8 to **1.76.1** on 2025-06-13
+  - [lightning-flow-scanner](https://github.com/Lightning-Flow-Scanner) from 3.16.1 to **3.23.0** on 2025-06-13
+  - [phpcs](https://github.com/PHPCSStandards/PHP_CodeSniffer) from 3.13.0 to **3.13.1** on 2025-06-14
+  - [cfn-lint](https://github.com/aws-cloudformation/cfn-lint) from 1.35.4 to **1.36.0** on 2025-06-14
+  - [devskim](https://github.com/microsoft/DevSkim) from 1.0.56 to **1.0.59** on 2025-06-14
+  - [sqlfluff](https://www.sqlfluff.com/) from 3.4.0 to **3.4.1** on 2025-06-14
 <!-- linter-versions-end -->
 
 ## [v8.7.0] - 2024-05-04
