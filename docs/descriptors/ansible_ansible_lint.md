@@ -9,7 +9,7 @@ description: How to use ansible-lint (configure, ignore files, ignore errors, he
 
 ## ansible-lint documentation
 
-- Version in MegaLinter: **25.4.0**
+- Version in MegaLinter: **25.5.0**
 - Visit [Official Web Site](https://ansible-lint.readthedocs.io/){target=_blank}
 - See [How to configure ansible-lint rules](https://ansible-lint.readthedocs.io/configuring/#configuration-file){target=_blank}
   - If custom `.ansible-lint` config file isn't found, [.ansible-lint](https://github.com/oxsecurity/megalinter/tree/main/TEMPLATES/.ansible-lint){target=_blank} will be used
@@ -52,7 +52,7 @@ This linter is available in the following flavors
 |       <img src="https://github.com/oxsecurity/megalinter/raw/main/docs/assets/icons/dotnet.ico" alt="" height="32px" class="megalinter-icon"></a>        | [dotnet](https://megalinter.io/beta/flavors/dotnet/)               | Optimized for C, C++, C# or VB based projects            |        65        |               ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oxsecurity/megalinter-dotnet/beta) ![Docker Pulls](https://img.shields.io/docker/pulls/oxsecurity/megalinter-dotnet) |
 |      <img src="https://github.com/oxsecurity/megalinter/raw/main/docs/assets/icons/dotnetweb.ico" alt="" height="32px" class="megalinter-icon"></a>      | [dotnetweb](https://megalinter.io/beta/flavors/dotnetweb/)         | Optimized for C, C++, C# or VB based projects with JS/TS |        74        |         ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oxsecurity/megalinter-dotnetweb/beta) ![Docker Pulls](https://img.shields.io/docker/pulls/oxsecurity/megalinter-dotnetweb) |
 |         <img src="https://github.com/oxsecurity/megalinter/raw/main/docs/assets/icons/go.ico" alt="" height="32px" class="megalinter-icon"></a>          | [go](https://megalinter.io/beta/flavors/go/)                       | Optimized for GO based projects                          |        52        |                       ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oxsecurity/megalinter-go/beta) ![Docker Pulls](https://img.shields.io/docker/pulls/oxsecurity/megalinter-go) |
-|        <img src="https://github.com/oxsecurity/megalinter/raw/main/docs/assets/icons/java.ico" alt="" height="32px" class="megalinter-icon"></a>         | [java](https://megalinter.io/beta/flavors/java/)                   | Optimized for JAVA based projects                        |        54        |                   ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oxsecurity/megalinter-java/beta) ![Docker Pulls](https://img.shields.io/docker/pulls/oxsecurity/megalinter-java) |
+|        <img src="https://github.com/oxsecurity/megalinter/raw/main/docs/assets/icons/java.ico" alt="" height="32px" class="megalinter-icon"></a>         | [java](https://megalinter.io/beta/flavors/java/)                   | Optimized for JAVA based projects                        |        55        |                   ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oxsecurity/megalinter-java/beta) ![Docker Pulls](https://img.shields.io/docker/pulls/oxsecurity/megalinter-java) |
 |     <img src="https://github.com/oxsecurity/megalinter/raw/main/docs/assets/icons/javascript.ico" alt="" height="32px" class="megalinter-icon"></a>      | [javascript](https://megalinter.io/beta/flavors/javascript/)       | Optimized for JAVASCRIPT or TYPESCRIPT based projects    |        60        |       ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oxsecurity/megalinter-javascript/beta) ![Docker Pulls](https://img.shields.io/docker/pulls/oxsecurity/megalinter-javascript) |
 |         <img src="https://github.com/oxsecurity/megalinter/raw/main/docs/assets/icons/php.ico" alt="" height="32px" class="megalinter-icon"></a>         | [php](https://megalinter.io/beta/flavors/php/)                     | Optimized for PHP based projects                         |        55        |                     ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oxsecurity/megalinter-php/beta) ![Docker Pulls](https://img.shields.io/docker/pulls/oxsecurity/megalinter-php) |
 |       <img src="https://github.com/oxsecurity/megalinter/raw/main/docs/assets/icons/python.ico" alt="" height="32px" class="megalinter-icon"></a>        | [python](https://megalinter.io/beta/flavors/python/)               | Optimized for PYTHON based projects                      |        66        |               ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oxsecurity/megalinter-python/beta) ![Docker Pulls](https://img.shields.io/docker/pulls/oxsecurity/megalinter-python) |
@@ -67,7 +67,7 @@ This linter is available in the following flavors
 
 ### How are identified applicable files
 
-- Activated only if one of these files is found: `.ansible-lint`
+- Activated only if one of these files is found: `.ansible-lint, .ansible-lint.yml, .ansible-lint.yaml, .config/ansible-lint.yml, .config/ansible-lint.yaml`
 - File extensions: `.yml`, `.yaml`
 - File name don't ends with: `vault.yml`, `vault.yaml`, `galaxy.yml`, `galaxy.yaml`
 
@@ -115,7 +115,7 @@ options:
   -P, --list-profiles   List all profiles.
   -L, --list-rules      List all the rules.
   -T, --list-tags       List all the tags and the rules they cover.
-  -f {brief,full,md,json,codeclimate,quiet,pep8,sarif}, --format {brief,full,md,json,codeclimate,quiet,pep8,sarif}
+  -f, --format {brief,full,md,json,codeclimate,quiet,pep8,sarif}
                         stdout formatting, json being an alias for codeclimate. (default: None)
   --sarif-file SARIF_FILE
                         SARIF output file
@@ -125,18 +125,18 @@ options:
   -p, --parseable       parseable output, same as '-f pep8'
   --project-dir PROJECT_DIR
                         Location of project/repository, autodetected based on location of configuration file.
-  -r RULESDIR, --rules-dir RULESDIR
-                        Specify custom rule directories. Add -R to keep using embedded rules from /venvs/ansible-lint/lib/python3.12/site-packages/ansiblelint/rules
+  -r, --rules-dir RULESDIR
+                        Specify custom rule directories. Add -R to keep using embedded rules from /venvs/ansible-lint/lib/python3.13/site-packages/ansiblelint/rules
   -R                    Keep default rules when using -r
   -s, --strict          Return non-zero exit code on warnings as well as errors
   --fix [WRITE_LIST]    Allow ansible-lint to perform auto-fixes, including YAML reformatting. You can limit the effective rule transforms (the 'write_list') by passing a keywords 'all' or 'none' or a comma separated list of rule ids or rule tags. YAML reformatting happens whenever '--fix' or '--fix=' is used. '--fix' and '--fix=all' are equivalent: they allow all transforms to run. Presence of --fix in command overrides config file value.
   --show-relpath        Display path relative to CWD
-  -t TAGS, --tags TAGS  only check rules whose id/tags match these values
+  -t, --tags TAGS       only check rules whose id/tags match these values
   -v                    Increase verbosity level (-vv for more)
-  -x SKIP_LIST, --skip-list SKIP_LIST
+  -x, --skip-list SKIP_LIST
                         only check rules whose id/tags do not match these values.             e.g: --skip-list=name,run-once
   --generate-ignore     Generate a text file '.ansible-lint-ignore' that ignores all found violations. Each line contains filename and rule id separated by a space.
-  -w WARN_LIST, --warn-list WARN_LIST
+  -w, --warn-list WARN_LIST
                         only warn about these rules, unless overridden in config file. Current version default value is: experimental, jinja[spacing], fqcn[deep]
   --enable-list ENABLE_LIST
                         activate optional rules by their tag name
@@ -144,9 +144,9 @@ options:
   --force-color         Force colored output, same as FORCE_COLOR=1
   --exclude EXCLUDE_PATHS [EXCLUDE_PATHS ...]
                         path to directories or files to skip. This option is repeatable.
-  -c CONFIG_FILE, --config-file CONFIG_FILE
+  -c, --config-file CONFIG_FILE
                         Specify configuration file to use. By default it will look for '.ansible-lint', '.ansible-lint.yml', '.ansible-lint.yaml', '.config/ansible-lint.yml', or '.config/ansible-lint.yaml'
-  -i IGNORE_FILE, --ignore-file IGNORE_FILE
+  -i, --ignore-file IGNORE_FILE
                         Specify ignore file to use. By default it will look for '.ansible-lint-ignore' or '.config/ansible-lint-ignore.txt'
   --offline             Disable installation of requirements.yml and schema refreshing
   --version
@@ -169,8 +169,8 @@ ANSIBLE_LINT_NODEPS: Avoids installing content dependencies and avoids performin
 - Dockerfile commands :
 ```dockerfile
 # renovate: datasource=pypi depName=ansible-lint
-ARG PIP_ANSIBLE_LINT_VERSION=25.4.0
+ARG PIP_ANSIBLE_LINT_VERSION=25.5.0
 ```
 
 - PIP packages (Python):
-  - [ansible-lint==25.4.0](https://pypi.org/project/ansible-lint/25.4.0)
+  - [ansible-lint==25.5.0](https://pypi.org/project/ansible-lint/25.5.0)
